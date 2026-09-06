@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Food Delivery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🍴 Foodie</h1>
+        <p>Delicious food delivered to your doorstep</p>
+    </header>
+
+
+    <!-- Menu -->
+    <main>
+
+        <section class="menu">
+
+            <h2>Our Menu</h2>
+
+            <div class="food-container">
+
+                <!-- Food 1 -->
+                <div class="food-card">
+                    <div class="food-image">🍕</div>
+
+                    <h3>Pizza</h3>
+                    <p>Cheesy vegetable pizza</p>
+
+                    <h4>₹199</h4>
+
+                    <button onclick="addToCart('Pizza', 199)">
+                        Add to Cart
+                    </button>
+                </div>
+
+
+                <!-- Food 2 -->
+                <div class="food-card">
+                    <div class="food-image">🍔</div>
+
+                    <h3>Burger</h3>
+                    <p>Fresh and tasty burger</p>
+
+                    <h4>₹149</h4>
+
+                    <button onclick="addToCart('Burger', 149)">
+                        Add to Cart
+                    </button>
+                </div>
+
+
+                <!-- Food 3 -->
+                <div class="food-card">
+                    <div class="food-image">🍝</div>
+
+                    <h3>Pasta</h3>
+                    <p>Creamy Italian pasta</p>
+
+                    <h4>₹179</h4>
+
+                    <button onclick="addToCart('Pasta', 179)">
+                        Add to Cart
+                    </button>
+                </div>
+
+
+                <!-- Food 4 -->
+                <div class="food-card">
+                    <div class="food-image">🍛</div>
+
+                    <h3>Meals</h3>
+                    <p>Traditional South Indian meals</p>
+
+                    <h4>₹120</h4>
+
+                    <button onclick="addToCart('Meals', 120)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Cart -->
+        <section class="cart">
+
+            <h2>🛒 Your Cart</h2>
+
+            <div id="cartItems">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <h3>
+                Total: ₹<span id="total">0</span>
+            </h3>
+
+            <button class="order-btn" onclick="placeOrder()">
+                Place Order
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Foodie | Simple Food Delivery Website</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
